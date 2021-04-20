@@ -87,10 +87,47 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-h1 {
-  font-family: euphorigenic;
+html {
+  font-size: 16px;
 }
 
+body {
+  font-family: 'david-libre', sans-serif;
+  font-size: 1em;
+}
+
+h1 {
+  font-family: euphorigenic;
+  font-size: 3em;
+  color: #FDFDFD;
+}
+
+h1 em {
+  color: #6D7E5A;
+}
+
+h4 {
+  font-size: .75em;
+  color: #FDFDFD;
+}
+
+.content-wrapper {
+  width: 90%;
+}
+
+.cover {
+  background-image: url("../img/labyrinth-grey-01.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #18241A;
+  display: flex;
+  width: 100%;
+  flex-flow: row wrap;
+  justify-content: center;
+  min-height: 500px;
+}
+}
 
 /* ==========================================================================
    Helper classes
