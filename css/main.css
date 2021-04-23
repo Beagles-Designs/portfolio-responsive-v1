@@ -87,6 +87,8 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+/*-------------------- Website Base CSS ----------------------*/ 
+
 html, body {
   width: 100%;
   overflow: auto;
@@ -99,10 +101,11 @@ main {
 
 html {
   font-size: 16px;
+  font-weight: 400;
 }
 
 body {
-  font-family: 'david-libre', sans-serif;
+  font-family: 'David Libre', serif;
   font-size: 1em;
   background-color: #18241A;
 }
@@ -110,30 +113,46 @@ body {
 h1 {
   font-family: euphorigenic;
   font-size: 3em;
-  color: #FDFDFD;
-  margin: 10px 10px 25px 0;
+  color: #6D7E5A;
+  margin: 0;
+  text-align: center;
 }
 
 h1 em {
-  color: #6D7E5A;
+  color: #FDFDFD;
 }
 
 h2 {
   font-family: euphorigenic;
   font-size: 4em;
   color: #6D7E5A;
-  margin: 10px 10px 25px 0;
+  margin: 0 auto;
+}
+
+h3 {
+  font-size: 1.5em;
+  color: black;
+  margin: 30px auto;
+  text-align: center;
+  font-weight: 400;
 }
 
 h4 {
-  font-size: .75em;
-  color: #FDFDFD;
-  margin: 0;
+  font-size: 10vw;
+  color: black;
+  margin: auto;
+  text-align: center;
+
 }
+
 
 p {
   color: black;
+  margin: 30px 0 50px 0;
 }
+
+/*-------------------- Cover Homepage Mobile CSS ----------------------*/ 
+
 
 .cover {
 overflow:hidden;
@@ -165,7 +184,7 @@ margin: 10px 0 0 0;
 
 .menu{
 margin: 25px 0;
-width: 13%;
+width: 16%;
 float: right;
 transition: 0.5s;
 }
@@ -210,8 +229,170 @@ transition: 0.5s;
   width: 100%;
 }
 
+.cover-title {
+  margin: 10px 10px 25px 0;
+}
+
+.cover-text {
+  font-size: .75em;
+  color: #FDFDFD;
+  margin: 0;
+}
+
+/*-------------------- Main pages Mobile CSS ----------------------*/ 
+
+.content-wrapper {
+  width: 83%;
+  margin: auto;
+  display: flex;
+  padding-top: 50px;
+}
+
+header .content-wrapper {
+  flex-flow: row;
+  padding: 25px 0;
+}
+
+header div .mobile-menu {
+  width: 100%;
+  margin: auto;
+}
+
+/*------------------- Menu Button Options -------*/
 
 
+#dropdown-options {
+  display: none;
+  background-color: #18241A;
+  min-width: auto;
+  z-index: 1;
+  margin: auto;
+}
+
+#dropdown-options a {
+  color: #707070;
+  font-size: 1em;
+  text-decoration: none;
+  padding: 10px 5px 0 5px;
+  display: block;
+}
+
+.menu-child:hover .menu-lines, .menu-child:active .menu-lines {
+  display:none;
+}
+
+.menu-child:hover, .menu-child:active {
+  display: flex;
+  width: 30%;
+  margin: 0;
+}
+
+.menu-child:hover #dropdown-options, .menu-child:hover #dropdown-options {
+  display: block;
+  border: none;
+  display: flex;
+  flex-flow: column
+  
+}
+
+
+/*---- End Button Options ---*/
+
+
+section {
+  background-color: white;
+  width: 100%;
+}
+
+section .content-wrapper {
+  flex-flow: column;
+}
+
+section div .skills-text {
+  display: flex;
+  text-align: center;
+  flex-flow: column;
+  margin: auto;
+  width: 90%;
+}
+
+
+footer {
+  background-color: #E6E4E2;
+
+}
+
+footer .content-wrapper {
+  flex-flow: column;
+  padding-bottom: 50px;
+}
+
+
+
+footer div .contact-icons {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    width: 30%;
+    margin: 20px auto 0 auto;
+}
+
+.contact-icons p {
+  margin: 30px auto 0 auto;
+}
+
+.contact-icons i {
+  color: black;
+  font-size: 3em;
+}
+
+.contact-icons i:hover {
+  color: #6D7E5A;
+}
+
+/*-------------------- About Page Mobile CSS ----------------------*/ 
+
+
+.about {
+  padding-bottom: 20px;
+}
+
+.about-container-parent {
+  margin: 30px 0 0 0;
+  display: flex;
+  flex-flow: column;
+}
+
+.portrait-container {
+  display: flex;
+}
+
+.portrait-container img {
+  width: 90%;
+  margin: auto;
+}
+
+.about p {
+  margin: 30px 0;
+}
+
+/*-------------------- Portfolio Page Mobile CSS ----------------------*/ 
+
+.portfolio-container-parent {
+  display: flex;
+  flex-flow: column;
+  margin-top: 50px;
+}
+
+.portfolio-container-small {
+  margin: auto;
+  width: 80%;
+}
+
+.portfolio a img {
+  width: 100%;
+  border: 1px solid #6D7E5A;
+}
 
 /* ==========================================================================
    Helper classes
