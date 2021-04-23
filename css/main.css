@@ -87,6 +87,16 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+html, body {
+  width: 100%;
+  overflow: auto;
+  height: 100%;
+}
+
+main {
+  height: 100%;
+}
+
 html {
   font-size: 16px;
 }
@@ -94,12 +104,14 @@ html {
 body {
   font-family: 'david-libre', sans-serif;
   font-size: 1em;
+  background-color: #18241A;
 }
 
 h1 {
   font-family: euphorigenic;
   font-size: 3em;
   color: #FDFDFD;
+  margin: 10px 10px 25px 0;
 }
 
 h1 em {
@@ -109,25 +121,87 @@ h1 em {
 h4 {
   font-size: .75em;
   color: #FDFDFD;
-}
-
-.content-wrapper {
-  width: 90%;
+  margin: 0;
 }
 
 .cover {
-  background-image: url("../img/labyrinth-grey-01.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-color: #18241A;
+overflow:hidden;
+height: 100%;
+margin: 10px 0 0 0;
+}
+
+
+
+.content-wrapper {
+  width: 83%;
+  margin: auto;
+  overflow: hidden;
+  height: 100%;
   display: flex;
+  flex-flow: column;
+}
+
+.background-img {
   width: 100%;
-  flex-flow: row wrap;
-  justify-content: center;
-  min-height: 500px;
+  position: absolute;
+  z-index: -1;
+  opacity: 20%;
 }
+
+.background-img img {
+  margin-top: 27px;
+  width: 100%;
 }
+
+.menu{
+margin: 25px 0;
+width: 13%;
+float: right;
+transition: 0.5s;
+}
+
+
+.menu-lines {
+  background-color: #707070;
+  height: 4px;
+  margin: 3px 0;
+}
+
+.one {
+  width: 100%;
+}
+
+.two {
+  width: 75%;
+  float: right;
+}
+
+.three {
+  width: 90%;
+  float: right;
+}
+
+.menu:hover div {
+  width: 100%;
+}
+
+.cover-parent {
+  display: flex;
+  height: 37%;
+
+}
+
+.cover-main {
+  text-align: right;
+  display: flex;
+  align-items: flex-end;
+  flex-flow: column;
+  margin:auto;
+  width: 100%;
+}
+
+
+
 
 /* ==========================================================================
    Helper classes
