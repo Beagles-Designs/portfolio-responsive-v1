@@ -1,0 +1,91 @@
+	/*
+  	Flaticon icon font: Flaticon
+  	Creation date: 08/02/2018 08:40
+  	*/
+
+@font-face {
+  font-family: "Flaticon";
+  src: url("./Flaticon.eot");
+  src: url("./Flaticon.eot?#iefix") format("embedded-opentype"),
+       url("./Flaticon.woff") format("woff"),
+       url("./Flaticon.ttf") format("truetype"),
+       url("./Flaticon.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "Flaticon";
+    src: url("./Flaticon.svg#Flaticon") format("svg");
+  }
+}
+
+[class^="flaticon-"]:before, [class*=" flaticon-"]:before,
+[class^="flaticon-"]:after, [class*=" flaticon-"]:after {   
+  font-family: Flaticon;
+        font-size: 20px;
+font-style: normal;
+margin-left: 20px;
+}
+
+.flaticon-001-livejournal:before { content: "\f100"; }
+.flaticon-002-linkedin:before { content: "\f101"; }
+.flaticon-003-ello:before { content: "\f102"; }
+.flaticon-004-hi5:before { content: "\f103"; }
+.flaticon-005-skype:before { content: "\f104"; }
+.flaticon-006-quora:before { content: "\f105"; }
+.flaticon-007-daily-motion:before { content: "\f106"; }
+.flaticon-008-air-bnb:before { content: "\f107"; }
+.flaticon-009-buzznet:before { content: "\f108"; }
+.flaticon-010-meetup:before { content: "\f109"; }
+.flaticon-011-diaspora:before { content: "\f10a"; }
+.flaticon-012-bebo:before { content: "\f10b"; }
+.flaticon-013-filmaffinity:before { content: "\f10c"; }
+.flaticon-014-tinder:before { content: "\f10d"; }
+.flaticon-015-skyrock:before { content: "\f10e"; }
+.flaticon-016-snapchat:before { content: "\f10f"; }
+.flaticon-017-nextdoor:before { content: "\f110"; }
+.flaticon-018-reverbnation:before { content: "\f111"; }
+.flaticon-019-tripadvisor:before { content: "\f112"; }
+.flaticon-020-snapfish:before { content: "\f113"; }
+.flaticon-021-path:before { content: "\f114"; }
+.flaticon-022-etsy:before { content: "\f115"; }
+.flaticon-023-medium:before { content: "\f116"; }
+.flaticon-024-renren:before { content: "\f117"; }
+.flaticon-025-xing:before { content: "\f118"; }
+.flaticon-026-tout:before { content: "\f119"; }
+.flaticon-027-twitter:before { content: "\f11a"; }
+.flaticon-028-howcast:before { content: "\f11b"; }
+.flaticon-029-yelp:before { content: "\f11c"; }
+.flaticon-030-classmates:before { content: "\f11d"; }
+.flaticon-031-deviantart:before { content: "\f11e"; }
+.flaticon-032-foursquare:before { content: "\f11f"; }
+.flaticon-033-kickstarter:before { content: "\f120"; }
+.flaticon-034-dots:before { content: "\f121"; }
+.flaticon-035-tagged:before { content: "\f122"; }
+.flaticon-036-periscope:before { content: "\f123"; }
+.flaticon-037-stumbleupon:before { content: "\f124"; }
+.flaticon-038-youtube:before { content: "\f125"; }
+.flaticon-039-lastfm:before { content: "\f126"; }
+.flaticon-040-reddit:before { content: "\f127"; }
+.flaticon-041-weheartit:before { content: "\f128"; }
+.flaticon-042-pinterest:before { content: "\f129"; }
+.flaticon-043-viadeo:before { content: "\f12a"; }
+.flaticon-044-taringa:before { content: "\f12b"; }
+.flaticon-045-google-plus:before { content: "\f12c"; }
+.flaticon-046-uber:before { content: "\f12d"; }
+.flaticon-047-sina-weibo:before { content: "\f12e"; }
+.flaticon-048-vimeo:before { content: "\f12f"; }
+.flaticon-049-facebook:before { content: "\f130"; }
+.flaticon-050-vk:before { content: "\f131"; }
+.flaticon-051-badoo:before { content: "\f132"; }
+.flaticon-052-dribbble:before { content: "\f133"; }
+.flaticon-053-delicious:before { content: "\f134"; }
+.flaticon-054-soundcloud:before { content: "\f135"; }
+.flaticon-055-tumblr:before { content: "\f136"; }
+.flaticon-056-myspace:before { content: "\f137"; }
+.flaticon-057-spotify:before { content: "\f138"; }
+.flaticon-058-flickr:before { content: "\f139"; }
+.flaticon-059-behance:before { content: "\f13a"; }
+.flaticon-060-instagram:before { content: "\f13b"; }

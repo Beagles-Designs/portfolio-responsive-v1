@@ -118,10 +118,21 @@ h1 em {
   color: #6D7E5A;
 }
 
+h2 {
+  font-family: euphorigenic;
+  font-size: 4em;
+  color: #6D7E5A;
+  margin: 10px 10px 25px 0;
+}
+
 h4 {
   font-size: .75em;
   color: #FDFDFD;
   margin: 0;
+}
+
+p {
+  color: black;
 }
 
 .cover {
@@ -131,8 +142,7 @@ margin: 10px 0 0 0;
 }
 
 
-
-.content-wrapper {
+.content-wrapper-cover {
   width: 83%;
   margin: auto;
   overflow: hidden;
