@@ -171,10 +171,11 @@ margin: 10px 0 0 0;
 }
 
 .background-img {
-  width: 100%;
+  width:  92%;
   position: absolute;
   z-index: -1;
   opacity: 20%;
+  left: 4%;
 }
 
 .background-img img {
@@ -183,16 +184,21 @@ margin: 10px 0 0 0;
 }
 
 .menu{
-margin: 25px 0;
 width: 40px;
 float: right;
 transition: 0.5s;
 }
 
+.content-wrapper-cover a {
+  margin-top:30px;
+  width: 60px;
+  position: fixed;
+  right: 10%;
+}
 
 .menu-lines {
   background-color: #707070;
-  height: 4px;
+  height: 3px;
   margin: 3px 0;
 }
 
@@ -216,7 +222,7 @@ transition: 0.5s;
 
 .cover-parent {
   display: flex;
-  height: 37%;
+  height: 57%;
 
 }
 
@@ -489,215 +495,324 @@ footer div .contact-icons {
 
 /*-------------Cover Page adjustments -------------*/
 
-.menu {
-  width: 48px;
-}
+  .menu {
+    width: 48px;
+  }
 
-.cover-parent {
-  height: 57%;
-  width: 80%;
-  margin: 0 auto;
-}
+  .cover-parent {
+    height: 60%%;
+    width: 80%;
+    margin: 0 auto;
+  }
 
-.content-wrapper-cover a {
-  margin-top: 30px;
-}
+  .content-wrapper-cover a {
+    margin-top: 30px;
+  }
 
-/*-------------General Page adjustments -------------*/
+  /*-------------General Page adjustments -------------*/
 
-.main-menu-lines {
-  display: none;
-  z-index: -1;
-}
+  .main-menu-lines {
+    display: none;
+    z-index: -1;
+  }
 
-header .content-wrapper {
-  justify-content: space-between;
-}
+  header .content-wrapper {
+    justify-content: space-between;
+  }
 
-header div .mobile-menu {
-  display: flex;
-  flex-flow: row;
-  justify-content: flex-end;
-  width: 30%;
-  margin: 0;
-}
-
-#dropdown-options {
-  display: flex;
-  justify-content: flex-end;
-}
-
-#dropdown-options a {
-  color: white;
-}
-
-.menu-child:hover .menu-lines, .menu-child:active .menu-lines {        /*----- FIX LATER ----*/
-  display:none;
-}
-
-.menu-child:hover #dropdown-options, .menu-child:hover #dropdown-options {
-  border: none;
-  display: flex;
-  flex-flow: row;
-}
-
-
-#dropdown-options:hover #dropdown-options a {
-  color: #6D7E5A;
-}
-
-h4 {
-  font-size: 5vw;
-}
-
-footer div .contact-icons {
-  flex-flow: row;
-  width: 60%;
-  justify-content: space-between;
-  margin: 0 auto;
-}
-
-.contact-icons i {
-  font-size: 2.5em;
-}
-
-/*-------------Skills Page adjustments -------------*/
-
-.skills .content-wrapper {
-  width:67%;
-}
-
-section div .skills-text {
-  width: 50%;
-}
-
-section div .skills-right {
-  text-align: right;
-  margin-left: 50%;
-}
-
-section div .skills-left {
-  text-align: left;
-  margin-right: 50%;
-}
-
-/*-------------About Page adjustments -------------*/
-
-.about div .about-container-parent {
-  width: 80%;
-  margin: auto;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-}
-
-.portrait-container {
-  width: 37%;
-}
-
-.about-top {
-  width: 63%;
-  padding-left: 15px;
-  box-sizing: border-box;
-
-}
-
-.about-bottom {
-  width: 100%;
-  margin-top: 0;
-}
-
-/*-------------Portfolio Page adjustments -------------*/
-
-.portfolio .content-wrapper {
-  width: 100%;
-}
-
-.portfolio-text {
-  margin-bottom: 25px;
-}
-
-
-.portfolio-container-small {
-  display: flex;
-  flex-flow: row;
-  width: 100%;
-  justify-content: space-between;
-}
-
-#green-portfolio {
-  background-color: #6D7E5A;
-  width: 100%;
-  margin-bottom: 25px;
-}
-
-.portfolio a {
-  width:40%;
-}
-
-.portfolio a img {
-  width: 100%;
-}
-
-.port-one, .port-three {
-  flex-flow: row-reverse;
-  width: 83%;
-  margin-bottom: 25px;
-
-}
-
-.port-two {
-  background-color: #6D7E5A;
-  width: 83%;
-}
-
-.port-one h3, .port-three h3{
-  margin: auto 0;
-}
-
-.port-two h3 {
+  header div .mobile-menu {
+    display: flex;
+    flex-flow: row;
+    width: 30%;
     margin: auto 0;
-}
+  }
+
+  .menu-child {
+    width: 100%;
+  }
+
+  #dropdown-options {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  #dropdown-options a {
+    color: white;
+  }
+
+  .menu-child:hover .menu-lines, .menu-child:active .menu-lines {       
+    display:none;
+    width: 100%;
+  }
+
+  .menu-child:hover {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .menu-child:hover #dropdown-options, .menu-child:hover #dropdown-options {
+    border: none;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+
+  #dropdown-options a:hover {
+    color: #6D7E5A;
+  }
+
+  h4 {
+    font-size: 5vw;
+  }
+
+  footer div .contact-icons {
+    flex-flow: row;
+    width: 60%;
+    justify-content: space-between;
+    margin: 0 auto;
+  }
+
+  .contact-icons i {
+    font-size: 2.5em;
+  }
+
+  /*-------------Skills Page adjustments -------------*/
+
+  .skills .content-wrapper {
+    width:67%;
+  }
+
+  section div .skills-text {
+    width: 50%;
+  }
+
+  section div .skills-right {
+    text-align: right;
+    margin-left: 50%;
+  }
+
+  section div .skills-left {
+    text-align: left;
+    margin-right: 50%;
+  }
+
+  /*-------------About Page adjustments -------------*/
+
+  .about div .about-container-parent {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+
+  .portrait-container {
+    width: 37%;
+  }
+
+  .about-top {
+    width: 63%;
+    padding-left: 15px;
+    box-sizing: border-box;
+
+  }
+
+  .about-bottom {
+    width: 100%;
+    margin-top: 0;
+  }
+
+  /*-------------Portfolio Page adjustments -------------*/
+
+  .portfolio .content-wrapper {
+    width: 100%;
+  }
+
+  .portfolio-text {
+    margin-bottom: 25px;
+  }
+
+
+  .portfolio-container-small {
+    display: flex;
+    flex-flow: row;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  #green-portfolio {
+    background-color: #6D7E5A;
+    width: 100%;
+    margin-bottom: 25px;
+  }
+
+  .portfolio a {
+    width:40%;
+  }
+
+  .portfolio a img {
+    width: 100%;
+  }
+
+  .port-one, .port-three {
+    flex-flow: row-reverse;
+    width: 83%;
+    margin-bottom: 25px;
+
+  }
+
+  .port-two {
+    background-color: #6D7E5A;
+    width: 83%;
+  }
+
+  .port-one h3, .port-three h3{
+    margin: auto 0;
+  }
+
+  .port-two h3 {
+      margin: auto 0;
+  }
+
+  .portfolio a img:hover {
+    opacity: 50%;
+  }
 
 }
 
 
-/*----------------------- Media Queries - Tablet ----------------------------------------*/
+/*----------------------- Media Queries - Desktop ----------------------------------------*/
 
 @media only screen and (min-width: 1200px) {
 /*-------------Cover Page adjustments -------------*/
 
-.menu-lines {
-  height: 5px;
+  .mobile-menu {
+    justify-content: space-between;
+  }
+
+  .menu-lines {
+    height: 6px;
+    margin: 5px 0;
+  }
+
+  .menu {
+    width: 100%;
+  }
+
+  .content-wrapper-cover 
+  {
+    max-width: 1200px;
+  }
+
+  .content-wrapper-cover a {
+    margin-top: 50px;
+    width: 80px;
+  }
+
+  .cover {
+    margin: auto;
+  }
+
+  .cover-parent {
+    width: 100%;
+    height: 100%;
+  }
+
+  .background-img {
+    display: flex;
+    width: 100%;
+    left: 0;
+  }
+
+  .cover .background-img img {
+    margin: auto;
+    box-sizing: border-box;
+    max-width: 1200px;
+  }  
+
+
+  /*-------------Main Page adjustments -------------*/
+
+  .content-wrapper {
+    padding-bottom: 50px;
+  }
+
+  header .content-wrapper {
+    padding: 50px 0;
+  }
+
+  header h2 {
+    font-size: 4.5em;
+  }
+
+  #dropdown-options {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  #dropdown-options a {
+    font-size: 1.5em;
+  }
+
+  h1 {
+    font-size: 4em;
+  }
+
+  p {
+    font-size: 2em;
+  }
+
+  .skills-right h1 {
+    text-align: right;
+  }
+
+  .skills-left h1 {
+    text-align: left;
+  }
+
+
+  h4 {
+    font-size: 4vw;
+  }
+
+  footer .content-wrapper {
+    padding: 100px 0;
+  }
+
+  /*-------------About Page adjustments -------------*/
+
+
+  .portrait-container img {
+    width: 80%;
+    margin: 0;
+  }
+
+  .about-text h1 {
+    margin-bottom: 50px;
+  }
+
+  .about .about-top {
+    margin-top: 0;
+  }
+
+  /*-------------Portfolio Page adjustments -------------*/
+
+h3 {
+  font-size: 2.5em;
 }
 
-.menu {
-  width: 60px;
+.portfolio a {
+  max-width: 450px;
 }
 
-.cover {
-  margin: auto;
+
 }
-
-.cover-parent {
-  width: 100%;
-  height: 100%;
-}
-
-.background-img {
-  display: flex;
-}
-
-.cover .background-img img {
-  margin: auto;
-  max-width: 100%;
-  box-sizing: border-box;
-  max-width: 1200px;
-}  
-
-
-
 @media print,
   (-webkit-min-device-pixel-ratio: 1.25),
   (min-resolution: 1.25dppx),
