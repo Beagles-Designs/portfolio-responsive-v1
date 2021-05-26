@@ -115,7 +115,7 @@ body {
 
 h1 {
   font-family: euphorigenic;
-  font-size: 3em;
+  font-size: 2.5em;
   color: #6D7E5A;
   margin: 0;
   text-align: center;
@@ -141,7 +141,7 @@ h3 {
 }
 
 h4 {
-  font-size: 6vw;
+  font-size: 7vw;
   color: black;
   margin: auto;
   text-align: center;
@@ -261,7 +261,7 @@ transition: 0.5s;
   width: 83%;
   margin: auto;
   display: flex;
-  padding-top: 50px;
+  padding: 50px 0;
   max-width: 1300px;
 }
 
@@ -274,6 +274,18 @@ header div .mobile-menu {
   width: 100%;
   margin: auto;
 }
+
+.skills-text ol 
+{
+  list-style-type: none;
+  padding: 0 5px;
+}
+
+.skills-text ol li {
+  padding: .5em;
+}
+
+
 
 /*------------------- Menu Button Options -------*/
 
@@ -349,14 +361,22 @@ footer .content-wrapper {
 
 footer div .contact-icons {
     display: flex;
-    flex-flow: column;
-    justify-content: space-between;
-    width: 30%;
-    margin: 20px auto 0 auto;
+    flex-flow: row;
+    flex-wrap: wrap;
+    flex-direction: wrap;
+    width: 44%;
+    margin: 0 auto;
+}
+
+#email {
+  margin: 30px 0 0 0;
+  text-align: center;
 }
 
 .contact-icons p {
   margin: 30px auto 0 auto;
+  text-align: center;
+  width: 50%;
 }
 
 .contact-icons i {
@@ -381,6 +401,10 @@ footer div .contact-icons {
   flex-flow: column;
 }
 
+.about-text {
+  margin-bottom: 30px;
+}
+
 .portrait-container {
   display: flex;
 }
@@ -391,7 +415,51 @@ footer div .contact-icons {
 }
 
 .about p {
+  margin: 30px 0 15px 0;
+}
+
+.interests {
+  width:  80%;
+  margin: auto;
+}
+
+.interests-right {
+  text-align: right;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
   margin: 30px 0;
+} 
+
+.interests-left {
+  text-align: left;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.interests-right .interests-small-text, .interests-left .interests-small-text {
+  font-size: .75em;
+  font-style: italic;
+  margin: 0;
+}
+
+.interests-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.interests-text p {
+  margin: 0;
+}
+
+.interests-icon {
+  width: 4em;
+  height: 100%;
 }
 
 /*-------------------- Portfolio Page Mobile CSS ----------------------*/ 
