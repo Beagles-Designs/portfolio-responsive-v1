@@ -92,11 +92,9 @@ textarea {
 html, body {
   width: 100%;
   overflow: auto;
-  height: 100%;
 }
 
 main {
-  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -111,6 +109,7 @@ body {
   font-family: 'David Libre', serif;
   font-size: 1em;
   background-color: #18241A;
+  min-height: 100vw;
 }
 
 h1 {
@@ -133,11 +132,11 @@ h2 {
 }
 
 h3 {
-  font-size: 1.5em;
-  color: black;
-  margin: 30px auto;
+  font-size: 1.75em;
+  font-family: euphorigenic;
+  color: #6D7E5A;
+  margin: 30px auto .5em auto;
   text-align: center;
-  font-weight: 400;
 }
 
 h4 {
@@ -148,16 +147,26 @@ h4 {
 
 }
 
+h5 {
+  font-size: 1em;
+  font-family: euphorigenic;
+  color: #6d7e5a;
+  margin: 0 auto 30px auto;
+  text-align: center;
+}
+
+h6 {
+  font-size: 1.5em;
+  text-align: center;
+  font-weight: 600;
+}
 
 p {
   color: black;
   margin: 30px 0 50px 0;
 }
 
-#statements {
-  font-size: 1.5em;
-  text-align: center;
-}
+
 
 /*-------------------- Cover Homepage Mobile CSS ----------------------*/ 
 
@@ -232,6 +241,7 @@ transition: 0.5s;
 .cover-parent {
   display: flex;
   height: 57%;
+  margin: 30% auto;
 
 }
 
@@ -262,7 +272,7 @@ transition: 0.5s;
   margin: auto;
   display: flex;
   padding: 50px 0;
-  max-width: 1300px;
+  max-width: 1600px;
 }
 
 header .content-wrapper {
@@ -332,6 +342,7 @@ header div .mobile-menu {
   width: 100%;
   display: flex;
   margin: auto;
+  height: 100%;
 }
 
 section .content-wrapper {
@@ -368,8 +379,8 @@ footer div .contact-icons {
     margin: 0 auto;
 }
 
-#email {
-  margin: 30px 0 0 0;
+.email {
+  margin: 0;
   text-align: center;
 }
 
@@ -391,10 +402,6 @@ footer div .contact-icons {
 /*-------------------- About Page Mobile CSS ----------------------*/ 
 
 
-.about {
-  padding-bottom: 20px;
-}
-
 .about-container-parent {
   margin: 30px 0 0 0;
   display: flex;
@@ -410,12 +417,15 @@ footer div .contact-icons {
 }
 
 .portrait-container img {
-  width: 90%;
+  width: 100%;
   margin: auto;
+  max-width: 240px;
+  max-height: 207px;
 }
 
 .about p {
   margin: 30px 0 15px 0;
+  text-indent: 15px;
 }
 
 .interests {
@@ -433,7 +443,6 @@ footer div .contact-icons {
 } 
 
 .interests-left {
-  text-align: left;
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-around;
@@ -452,6 +461,12 @@ footer div .contact-icons {
   justify-content: center;
   align-items: flex-end;
 }
+
+.text-left {
+  text-align: left;
+  align-items: flex-start;
+}
+
 
 .interests-text p {
   margin: 0;
@@ -475,9 +490,41 @@ footer div .contact-icons {
   width: 80%;
 }
 
+.portfolio-text p 
+{
+  text-align: center;
+}
+
+.portfolio-container-parent p {
+  margin: 30px 0 0 0;
+}
+
+
 .portfolio a img {
   width: 100%;
   border: 1px solid #6D7E5A;
+}
+
+ #green-portfolio {
+    background-color: #6D7E5A;
+    width: 100vw;
+    margin-bottom: 25px;
+    align-self: center;
+    padding-bottom: 30px;
+  }
+
+.port-two h3, .port-two h5 {
+  color: white;
+}
+
+.portfolio-text a {
+  font-size: 4em;
+  color: black;
+}
+
+#github-link {
+  margin: 0 auto;
+  width: 30%;
 }
 
 /* ==========================================================================
@@ -582,7 +629,6 @@ footer div .contact-icons {
   .cover-parent {
     height: 60%%;
     width: 80%;
-    margin: 0 auto;
   }
 
   .content-wrapper-cover a {
@@ -595,6 +641,25 @@ footer div .contact-icons {
     display: none;
     z-index: -1;
   }
+
+  h1 {
+    font-size: 3.75em;
+  }
+
+  h6 {
+    font-size: 2em;
+  }
+
+  p {
+    font-size: 1.5em;
+  }
+
+  .content-wrapper {
+    margin: 30px auto 50px auto;
+    width: 80%;
+  }
+
+  /* -------Header Adjustements -------*/
 
   header .content-wrapper {
     justify-content: space-between;
@@ -619,6 +684,7 @@ footer div .contact-icons {
 
   #dropdown-options a {
     color: white;
+    font-size: 1.25em;
   }
 
   .menu-child:hover .menu-lines, .menu-child:active .menu-lines {       
@@ -645,6 +711,8 @@ footer div .contact-icons {
     color: #6D7E5A;
   }
 
+/*----- Footer Adjustements -----*/
+
   h4 {
     font-size: 5vw;
   }
@@ -656,28 +724,43 @@ footer div .contact-icons {
     margin: 0 auto;
   }
 
+  .email {
+    font-size: 2em;
+  }
+
   .contact-icons i {
-    font-size: 2.5em;
+    font-size: 3.5em;
   }
 
   /*-------------Skills Page adjustments -------------*/
 
   .skills .content-wrapper {
-    width:67%;
+    align-items: flex-end;
   }
 
+
   section div .skills-text {
-    width: 50%;
+    margin: auto;
+  }
+
+  .skills-text p {
+    font-size: 2em;
+    width: 80%;
+  }
+
+  .skills-text ol li {
+    font-size: 2em;
+    padding: .25em 0;
   }
 
   section div .skills-right {
     text-align: right;
-    margin-left: 50%;
+    align-items: flex-end;
   }
 
   section div .skills-left {
     text-align: left;
-    margin-right: 50%;
+    align-items: flex-start;
   }
 
   /*-------------About Page adjustments -------------*/
@@ -693,24 +776,58 @@ footer div .contact-icons {
 
   .portrait-container {
     width: 37%;
+    margin-top: 30px;
   }
 
   .about-top {
     width: 63%;
     padding-left: 15px;
     box-sizing: border-box;
+    padding-right: 15%;
 
   }
 
   .about-bottom {
     width: 100%;
     margin-top: 0;
+    padding-right: 15%;
+  }
+
+  .interests-text p {
+    font-size: 2em;
+  }
+
+  .interests-right .interests-small-text, .interests-left .interests-small-text {
+    font-size: 1.25em;
+  }
+
+  .interests-right {
+    justify-content: flex-end;
+    margin: 50px auto;
+  }
+
+  .interests-right img {
+    padding-right: 15%;
+  }
+
+  .interests-left {
+    justify-content: flex-end;
+  }
+
+  .interests-left img {
+    padding-left: 15%;
   }
 
   /*-------------Portfolio Page adjustments -------------*/
 
-  .portfolio .content-wrapper {
-    width: 100%;
+
+  h3 {
+    margin: auto 0;
+    font-size: 2em;
+  }
+
+  h5 {
+    font-size: 1.5em;
   }
 
   .portfolio-text {
@@ -719,50 +836,80 @@ footer div .contact-icons {
     width: 100%;
   }
 
+  .portfolio-text h6 {
+    margin: 30px auto;
+  }
+
+  .portfolio-container-parent p {
+    font-size: 1.5em;
+    width: 45%;
+    margin: auto;
+  }
 
   .portfolio-container-small {
     display: flex;
     flex-flow: row;
-    width: 90%;
     justify-content: space-between;
-  }
-
-  #green-portfolio {
-    background-color: #6D7E5A;
-    width: 100vw;
-    margin-bottom: 25px;
-    align-self: center;
   }
 
   .portfolio a {
     width:40%;
+    max-width: 450px;
+    max-height: 450px;
   }
 
   .portfolio a img {
     width: 100%;
   }
 
-  .port-one, .port-three {
-    flex-flow: row-reverse;
+  .port-one, .port-two, .port-three {
+    flex-flow: column;
     margin-bottom: 25px;
+  }
 
+  .port-one, .port-three {
+    width: 100%;
   }
 
   .port-two {
     background-color: #6D7E5A;
-    max-width: 1300px;
+    max-width: 1600px;
+    margin-top: 50px;
   }
 
   .port-two a {
     margin: 25px 0;
   }
 
-  .port-one h3, .port-three h3{
-    margin: auto 0;
+  #green-portfolio {
+    padding-bottom: 50px;
   }
 
-  .port-two h3 {
-      margin: auto 0;
+  .port-desk-one, .port-desk-two {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+  .port-desk-one {
+    flex-flow: row-reverse;
+  }
+
+  .port-desk-two {
+    flex-flow: row;
+  }
+
+  .port-three {
+    align-items: center;
+    margin-bottom: 100px;
+  }
+
+  #unplugged-tasks {
+    margin: auto;
+  }
+
+  #unplugged-tasks p {
+    width: 100%;
   }
 
   .portfolio a img:hover {
@@ -825,7 +972,7 @@ footer div .contact-icons {
   /*-------------Main Page adjustments -------------*/
 
   .content-wrapper {
-    padding-bottom: 50px;
+    margin-bottom: 50px;
   }
 
   header .content-wrapper {
@@ -850,6 +997,10 @@ footer div .contact-icons {
     font-size: 4em;
   }
 
+  h6 {
+    font-size: 3em;
+  }
+
   p {
     font-size: 2em;
   }
@@ -867,9 +1018,6 @@ footer div .contact-icons {
     font-size: 3vw;
   }
 
-  footer .content-wrapper {
-    padding: 100px 0;
-  }
 
   .contact-icons i {
     font-size: 2em;
@@ -877,18 +1025,36 @@ footer div .contact-icons {
 
   /*-------------About Page adjustments -------------*/
 
-
-  .portrait-container img {
-    width: 80%;
-    margin: 0;
-  }
-
-  .about-text h1 {
+   .about-text h1 {
     margin-bottom: 50px;
   }
 
+  .portrait-container img {
+    max-width: 380px;
+    max-height: 327px;
+  }
+
+ 
+  .about div .portrait-container {
+    width: 50%;
+  }
+
+
   .about .about-top {
-    margin-top: 0;
+    margin-top: 30px;
+    width: 50%;
+  }
+
+
+  .about-top, .about-bottom {
+    padding: 0;
+  }
+
+
+
+ .about div .about-container-parent {
+    justify-content: space-between;
+    width: 100%;
   }
 
   /*-------------Portfolio Page adjustments -------------*/
@@ -900,6 +1066,8 @@ h3 {
 .portfolio a {
   max-width: 400px;
 }
+
+
 
 
 }
